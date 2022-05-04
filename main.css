@@ -361,6 +361,14 @@ header {
     .header-home p{
         font-size: 28px;
     }
+    .header-home h1 img{
+        animation-name: movimiento-header;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-delay: 1s;
+
+    }
     /* main programas */
     .main-programas h3{
         font-size: 20px;
@@ -393,19 +401,26 @@ header {
     }
 }
 
-
 /* HOVER */
-nav ul li a:hover {
-    text-decoration: underline;
-    font-size: 17px;
+
+.container img:hover{
+    filter: blur(5px);
 }
 
 /* ANIMACIONES */
 
-@keyframes destaque-uno {
+@keyframes movimiento-header{
+    0% {
+        width: 100px;
+    }
+    
+    50%{
 
-    0%{
-        font-size: 60px;
+        width: 50px;
+    }
+
+    100% {
+        width: 100%;
     }
 }
 
